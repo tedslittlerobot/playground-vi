@@ -1,11 +1,12 @@
 {
-	"name": "laravel/laravel",
-	"description": "The Laravel Framework.",
+	"name": "vi/playground",
+	"description": "VI Playground.",
 	"keywords": ["framework", "laravel"],
 	"license": "MIT",
 	"type": "project",
 	"require": {
-		"laravel/framework": "5.0.*"
+		"laravel/framework": "5.0.*",
+		"vi/core": "dev-master"
 	},
 	"require-dev": {
 		"phpunit/phpunit": "~4.0",
@@ -38,7 +39,14 @@
 			"php artisan key:generate"
 		]
 	},
+	"repositories": [
+		{
+			"type": "git",
+			"url": "http://github.com/tedslittlerobot/vi"
+		}
+	],
 	"config": {
 		"preferred-install": "dist"
-	}
+	},
+	"minimum-stability": "dev"
 }
